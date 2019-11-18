@@ -1,0 +1,84 @@
+// Header Styles go Here!
+
+header {
+  .display(space-between);
+  flex-flow: column;
+  background: @header-bg;
+  width: 100%;
+  //height: 110px;
+  border-bottom: 1px solid grey;
+
+  //border-radius: 10px;
+
+  h1 {
+    padding: 10px;
+  }
+
+  p {
+    color: white;
+    padding-bottom: 10px;
+  }
+
+  nav {
+    .display();
+    width: 100%;
+    //max-width: 500px;
+    height: 40px;
+    background: @nav-bg;
+    //border-radius: 10px;
+
+    @media @phone {
+      justify-content: space-around;
+      flex-flow: column;
+      height: 100px;
+    }
+
+    .navContainer {
+      .display();
+      width: 100%;
+      max-width: 800px;
+
+      @media @phone {
+        justify-content: space-evenly;
+        flex-flow: column;
+        height: 100px;
+      }
+
+      .standardNav {
+        .display();
+        width: 70%;
+
+        @media @phone {
+          width: 100%;
+        }
+
+        a {
+          min-width: 60px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      } // This closes the standard Nav styles
+
+      .buttonBox {  
+        .display();
+        width: 30%;
+        min-width: 200px;
+
+        .buttonA {
+          .button();
+        }
+      } // This closes the button styles
+
+      a {
+        color: darkgrey;
+
+        &:hover {
+          color: white;
+        }
+      } // This closes the nav anchor styles
+    } // This closes the nav Container
+  } // This closes the nav
+} // This closes the Header
