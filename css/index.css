@@ -140,6 +140,7 @@ html {
   align-items: center;
   flex-flow: column;
   background: #A8D0E6;
+  width: 100vw;
 }
 body {
   display: flex;
