@@ -4,7 +4,7 @@ footer {
   .display();
   height: 40px;
   width: 100%;
-  position: static;
+  position: fixed;
   bottom: 0;
   border-top: 1px solid grey;
   //max-width: 1000px;
@@ -28,5 +28,25 @@ footer {
         }
       }
     } // This closes the Bottom standardNav
+
+    .buttonBox {  
+      .display();
+      width: 30%;
+      min-width: 200px;
+
+      @media @phone {
+        display: none;
+      }
+
+      .buttonA {
+        .button();
+
+        // @media @phone {
+        //   width: 90%;
+        //   height: 50px;
+        //   font-size: 2.3rem;
+        // }
+      }
+    } // This closes the button styles
   } // This closes the Bottom Nav Container
 } // This closes the entire Footer

@@ -143,11 +143,12 @@ html {
 }
 body {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column;
   width: 100%;
   min-height: 100vh;
+  padding-bottom: 40px;
 }
 h1,
 h2,
@@ -214,7 +215,7 @@ header nav {
   header nav {
     justify-content: space-around;
     flex-flow: column;
-    height: 100px;
+    height: 220px;
   }
 }
 header nav .navContainer {
@@ -228,7 +229,7 @@ header nav .navContainer {
   header nav .navContainer {
     justify-content: space-evenly;
     flex-flow: column;
-    height: 100px;
+    height: 220px;
   }
 }
 header nav .navContainer .standardNav {
@@ -255,6 +256,14 @@ header nav .navContainer .buttonBox {
   width: 30%;
   min-width: 200px;
 }
+@media (max-width: 600px) {
+  header nav .navContainer .buttonBox {
+    justify-content: space-between;
+    flex-flow: column;
+    height: 120px;
+    width: 100%;
+  }
+}
 header nav .navContainer .buttonBox .buttonA {
   display: flex;
   justify-content: space-evenly;
@@ -270,6 +279,13 @@ header nav .navContainer .buttonBox .buttonA {
 header nav .navContainer .buttonBox .buttonA:hover {
   background: #f76C6C;
 }
+@media (max-width: 600px) {
+  header nav .navContainer .buttonBox .buttonA {
+    width: 90%;
+    height: 50px;
+    font-size: 2.3rem;
+  }
+}
 header nav .navContainer a {
   color: darkgrey;
 }
@@ -282,7 +298,7 @@ footer {
   align-items: center;
   height: 40px;
   width: 100%;
-  position: static;
+  position: fixed;
   bottom: 0;
   border-top: 1px solid grey;
   background-color: #24305E;
@@ -307,11 +323,36 @@ footer .bottomNav .standardNav a:hover {
   color: white;
   text-decoration: underline;
 }
-.middle {
-  text-align: center;
+footer .bottomNav .buttonBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  min-width: 200px;
+}
+@media (max-width: 600px) {
+  footer .bottomNav .buttonBox {
+    display: none;
+  }
+}
+footer .bottomNav .buttonBox .buttonA {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+  background: #f43c3c;
+  color: white;
+  width: 80px;
+  font-size: 1.6rem;
+  padding: 8px 0px;
+  border-radius: 8px;
+}
+footer .bottomNav .buttonBox .buttonA:hover {
+  background: #f76C6C;
 }
 .middle h2 {
   color: #374785;
+  text-align: center;
 }
 .middle img {
   width: 100%;
@@ -320,5 +361,31 @@ footer .bottomNav .standardNav a:hover {
 }
 .middle p {
   padding-top: 20px;
+  padding-bottom: 20px;
   border-top: 1px solid grey;
+}
+.middle .pButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+  background: #f43c3c;
+  color: white;
+  width: 80px;
+  font-size: 1.6rem;
+  padding: 8px 0px;
+  border-radius: 8px;
+  margin-left: 25%;
+  width: 50%;
+  height: 50px;
+  font-size: 2.3rem;
+}
+.middle .pButton:hover {
+  background: #f76C6C;
+}
+@media (max-width: 600px) {
+  .middle .pButton {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
