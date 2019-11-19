@@ -1,1 +1,74 @@
 // About page styles go Here!
+
+.aboutWho {
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  //height: 250px;
+  //border: 1px solid black;
+  border-radius: 10px;
+  background: @verylightblue;
+
+  h2 {
+    color: @darkerblue;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid grey;
+  }
+
+  .pButton {
+    .button();
+    margin-left: 25%;
+    width: 50%;
+    height: 50px;
+    font-size: 2.3rem;
+    
+    @media @phone {
+      width: 100%;
+      margin-left: 0%;
+    }
+  }
+}
+
+.aboutYou {
+  .display();
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 20px;
+
+  .youCard {
+    .display();
+    flex-flow: column;
+    margin: 20px;
+    min-width: 450px;
+    width: 25%;
+    height: 400px;
+    background: @verylightblue;
+    border-radius: 10px;
+
+    h2 {
+      color: @darkerblue;
+      border-bottom: 1px solid grey;
+    }
+
+    img {
+
+    }
+
+    p {
+      
+    }
+  }
+}
