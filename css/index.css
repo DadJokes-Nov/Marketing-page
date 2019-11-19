@@ -435,6 +435,12 @@ footer .bottomNav .standardNav a:hover {
   background: #dcecf5;
   border-radius: 10px;
 }
+@media (max-width: 600px) {
+  .aboutYou .youCard {
+    min-width: 90%;
+    width: 90%;
+  }
+}
 .aboutYou .youCard h2 {
   color: #374785;
   border-bottom: 1px solid grey;
