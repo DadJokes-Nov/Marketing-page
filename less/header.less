@@ -30,7 +30,7 @@ header {
     @media @phone {
       justify-content: space-around;
       flex-flow: column;
-      height: 100px;
+      height: 220px;
     }
 
     .navContainer {
@@ -41,7 +41,7 @@ header {
       @media @phone {
         justify-content: space-evenly;
         flex-flow: column;
-        height: 100px;
+        height: 220px;
       }
 
       .standardNav {
@@ -67,8 +67,23 @@ header {
         width: 30%;
         min-width: 200px;
 
+        @media @phone {
+          justify-content: space-between;
+          flex-flow: column;
+          height: 120px;
+          width: 100%;
+          //padding-top: 20px;
+          //border-top: 2px solid @darkerblue;
+        }
+
         .buttonA {
           .button();
+
+          @media @phone {
+            width: 90%;
+            height: 50px;
+            font-size: 2.3rem;
+          }
         }
       } // This closes the button styles
 
