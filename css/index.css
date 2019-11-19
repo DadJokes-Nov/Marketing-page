@@ -140,6 +140,8 @@ html {
   align-items: center;
   flex-flow: column;
   background: #A8D0E6;
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 body {
   display: flex;
@@ -296,9 +298,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 40px;
-  width: 100%;
-  bottom: 0;
+  height: 90px;
+  width: 100vw;
   border-top: 1px solid grey;
   background-color: #24305E;
 }
@@ -306,8 +307,13 @@ footer .bottomNav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  flex-flow: column;
+  width: 100vw;
   max-width: 800px;
+  height: 80px;
+}
+footer .bottomNav p {
+  color: white;
 }
 footer .bottomNav .standardNav {
   display: flex;
@@ -321,33 +327,6 @@ footer .bottomNav .standardNav a {
 footer .bottomNav .standardNav a:hover {
   color: white;
   text-decoration: underline;
-}
-footer .bottomNav .buttonBox {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 30%;
-  min-width: 200px;
-}
-@media (max-width: 600px) {
-  footer .bottomNav .buttonBox {
-    display: none;
-  }
-}
-footer .bottomNav .buttonBox .buttonA {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: column;
-  background: #f76C6C;
-  color: white;
-  width: 80px;
-  font-size: 1.6rem;
-  padding: 8px 0px;
-  border-radius: 8px;
-}
-footer .bottomNav .buttonBox .buttonA:hover {
-  background: #fa9c9c;
 }
 .middle h2 {
   color: #374785;
@@ -387,4 +366,76 @@ footer .bottomNav .buttonBox .buttonA:hover {
     width: 100%;
     margin-left: 0%;
   }
+}
+.aboutWho {
+  margin: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  background: #dcecf5;
+}
+.aboutWho h2 {
+  color: #374785;
+  text-align: center;
+}
+.aboutWho img {
+  width: 100%;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.aboutWho p {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid grey;
+}
+.aboutWho .pButton {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+  background: #f76C6C;
+  color: white;
+  width: 80px;
+  font-size: 1.6rem;
+  padding: 8px 0px;
+  border-radius: 8px;
+  margin-left: 25%;
+  width: 50%;
+  height: 50px;
+  font-size: 2.3rem;
+}
+.aboutWho .pButton:hover {
+  background: #fa9c9c;
+}
+@media (max-width: 600px) {
+  .aboutWho .pButton {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.aboutYou {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 20px;
+}
+.aboutYou .youCard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: column;
+  margin: 20px;
+  min-width: 450px;
+  width: 25%;
+  height: 400px;
+  background: #dcecf5;
+  border-radius: 10px;
+}
+.aboutYou .youCard h2 {
+  color: #374785;
+  border-bottom: 1px solid grey;
 }

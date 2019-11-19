@@ -1,19 +1,25 @@
 // Footer Styles go Here!
 
 footer {
-  .display();
-  height: 40px;
-  width: 100%;
+  .display();  
+  height: 90px;
+  width: 100vw;
   //position: absolute;
-  bottom: 0;
+  //bottom: 0;
   border-top: 1px solid grey;
   //max-width: 1000px;
   background-color: @darkestblue;
 
   .bottomNav {
     .display();
-    width: 100%;
+    flex-flow: column;
+    width: 100vw;
     max-width: 800px;
+    height: 80px;
+
+    p {
+      color: white;
+    }
 
     .standardNav {
       .display();
@@ -28,25 +34,5 @@ footer {
         }
       }
     } // This closes the Bottom standardNav
-
-    .buttonBox {  
-      .display();
-      width: 30%;
-      min-width: 200px;
-
-      @media @phone {
-        display: none;
-      }
-
-      .buttonA {
-        .button();
-
-        // @media @phone {
-        //   width: 90%;
-        //   height: 50px;
-        //   font-size: 2.3rem;
-        // }
-      }
-    } // This closes the button styles
   } // This closes the Bottom Nav Container
 } // This closes the entire Footer
