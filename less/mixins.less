@@ -13,7 +13,7 @@
   
   flex-flow: column;
   //background-image: linear-gradient( @button-bg, darken(@salmon, 50%));
-  background: darken(@salmon, 10%);
+  background: @button-bg;
   color: white;
   width: 80px;
   //height: 15%;
@@ -25,6 +25,6 @@
 
   &:hover {
     //background-image: linear-gradient( darken(@salmon, 50%), @button-bg);
-  background: @salmon;
+  background: lighten(@button-bg, 10%);
   }
 }
