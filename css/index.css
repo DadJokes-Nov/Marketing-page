@@ -313,6 +313,7 @@ footer .bottomNav {
   height: 80px;
 }
 footer .bottomNav p {
+  padding-top: 5px;
   color: white;
 }
 footer .bottomNav .standardNav {
@@ -320,6 +321,9 @@ footer .bottomNav .standardNav {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #374785;
 }
 footer .bottomNav .standardNav a {
   color: darkgrey;
