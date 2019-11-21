@@ -10,21 +10,16 @@
 
 .button() {
   .display();
-  
+
   flex-flow: column;
-  //background-image: linear-gradient( @button-bg, darken(@salmon, 50%));
   background: @button-bg;
   color: white;
   width: 80px;
-  //height: 15%;
-  //margin-bottom: 5%;
   font-size: 1.6rem;
   padding: 8px 0px;
   border-radius: 8px;
-  //transition: background-image 3s;
 
   &:hover {
-    //background-image: linear-gradient( darken(@salmon, 50%), @button-bg);
   background: lighten(@button-bg, 10%);
   }
 }
